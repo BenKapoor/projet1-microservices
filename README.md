@@ -18,7 +18,7 @@ Dependance des micros services :
     - eureka server
 
 Méthodologie :
-servcies métiers:
+services métiers:
 - créer un micro service inventory-service
 - configurer le fichier application.properties
 - domaine créer une classe Produit (id, name, price, description)
