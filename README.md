@@ -19,11 +19,11 @@ Dependance des micros services :
 
 Méthodologie :
 servcies métiers:
-1- créer un micro service inventory-service
-1bis- configurer le fichier application.properties
-2- domaine créer une classe Produit (id, name, price, description)
-3- service : addProduit(Produit p), List<Produit> findAll(), Produit getProduit(Long id)
-4- écrire le controller correspondant
-5- configurer le microservice et le déployer dans le microservice annuaire
-6- au niveau du microservice getway, rajouter le chemin vers ce nouveau micro service
-7- tester depuis le client qu'on peut bien atteindre le micro service
+- créer un micro service inventory-service
+- configurer le fichier application.properties
+- domaine créer une classe Produit (id, name, price, description)
+- service : addProduit(Produit p), List<Produit> findAll(), Produit getProduit(Long id)
+- écrire le controller correspondant
+- configurer le microservice et le déployer dans le microservice annuaire
+- au niveau du microservice getway, rajouter le chemin vers ce nouveau micro service
+- tester depuis le client qu'on peut bien atteindre le micro service
