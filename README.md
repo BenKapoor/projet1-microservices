@@ -16,6 +16,18 @@ Dependance des micros services :
     - gateway
 - eureka
     - eureka server
+ - hystrix
+    - dans la main @EnableHystrixDashboard
+    - dans application.properties server.port = 9999
+    - dépendance hystrix dashboard
+    - dans application.properties des microservice à monitorer :
+        - management.endpoints.web.exposure.include=hystrix.stream
+        - hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=2000
+        - @EnableHystrix dans le main
+        - http://localhost:8888/actuator/hystrix.stream permet de check si ça fonctionne dans le microservcie gateway par exemple (port 8888)
+    - http://localhost:9999/hystrix => ajouter l’adresse du service monitoré ex: http://localhost:8888/actuator/hystrix.stream
+
+
 
 Méthodologie :
 services métiers:
